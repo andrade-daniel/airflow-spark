@@ -46,7 +46,7 @@ This project contains the following containers:
 
 Inside the airflow-spark/docker/docker-airflow
 
-    $ docker build --rm --force-rm -t docker-airflow-spark:1.10.7_3.1.2 .
+    $ docker build --rm --force-rm -t docker-airflow-spark:2.2.3_3.0.3 .
 
 Optionally, you can override the arguments in the build to choose specific Spark, Hadoop and Airflow versions. As an example, here is how to build an image containing Airflow version `1.10.14`, Spark version `2.4.7` and Hadoop version `2.7`.
 
@@ -71,7 +71,7 @@ If you want to run in background:
 
     $ docker-compose up -d
 
-Note: when running the docker-compose for the first time, the images `postgres:9.6`, `bitnami/spark:3.1.2` and `jupyter/pyspark-notebook:spark-3.1.2` will be downloaded before the containers started.
+Note: when running the docker-compose for the first time, the images `postgres:9.6`, `bitnami/spark:<SPARK_VERSION>` and `jupyter/pyspark-notebook:spark-<SPARK_VERSION>` will be downloaded before the containers started.
 
 ### Check if you can access
 
