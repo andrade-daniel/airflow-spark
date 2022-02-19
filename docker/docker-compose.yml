@@ -17,7 +17,7 @@ services:
 
     # airflow LocalExecutor
     airflow-webserver:
-        image: docker-airflow-spark:1.10.7_3.1.2
+        image: docker-airflow-spark:2.2.3_3.1.2
         restart: always
         networks:
             - default_net
